@@ -322,11 +322,7 @@ margin-right: 0;
 .studio-team .item {
   width: 270px;
   height: 368px;
-  left: 1115px;
-  top: 1635px;
   background: #ffffff;
-  /* material shadow v1 */
-
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -382,7 +378,6 @@ margin-right: 0;
 .footer-style {
   width: 1600px;
   left: 0px;
-  top: 2097px;
   background: #2f303a;
 }
 /* Стиль текста адреса */
