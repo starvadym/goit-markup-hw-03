@@ -377,7 +377,7 @@ margin-right: 0;
 /* Стиль футера */
 .footer-style {
   width: 1600px;
-  left: 0px;
+  height: 252px;
   background: #2f303a;
 }
 /* Стиль текста адреса */
@@ -400,7 +400,6 @@ margin-right: 0;
   display: flex;
   margin-left: 295px;
 }
-
 .filter-bttns .item + .item {
   margin-left: 8px;
 }
@@ -429,6 +428,7 @@ margin-right: 0;
   height: 38px;
   background: var(--filter-static-color);
   border-radius: 4px;
+  border-width: 0;
 }
 .bttn-all:hover,
 .bttn-all:focus {
@@ -443,6 +443,7 @@ margin-right: 0;
   height: 38px;
   background: var(--filter-static-color);
   border-radius: 4px;
+  border-width: 0;
 }
 .bttn-websites:hover,
 .bttn-websites:focus {
@@ -457,6 +458,7 @@ margin-right: 0;
   height: 38px;
   background: var(--filter-static-color);
   border-radius: 4px;
+  border-width: 0;
 }
 .bttn-application:hover,
 .bttn-application:focus {
@@ -471,6 +473,7 @@ margin-right: 0;
   height: 38px;
   background: var(--filter-static-color);
   border-radius: 4px;
+  border-width: 0;
 }
 .bttn-design:hover,
 .bttn-design:focus {
@@ -485,6 +488,7 @@ margin-right: 0;
   height: 38px;
   background: var(--filter-static-color);
   border-radius: 4px;
+  border-width: 0;
 }
 .bttn-marketing:hover,
 .bttn-marketing:focus {
@@ -498,6 +502,7 @@ margin-right: 0;
 .projects {
   list-style-type: none;
   margin: 0;
+  margin-bottom: 94px;
   padding: 0;
   padding-top: 50px;
   display: flex;
@@ -509,8 +514,8 @@ margin-right: 0;
 }
 .projects .item {
   width: 370px;
+  height: 404px;
   background: #ffffff;
-  border: 1px solid #eeeeee;
   margin-bottom: 30px;
 }
 .projects .item:nth-last-child(-n + 3) {
@@ -522,7 +527,31 @@ margin-right: 0;
 .projects .item:nth-child(3n) {
   margin-left: 30px;
 }
+/* Удаление нижнего зазора у изображения*/
+.image-freegap {
+  display: block;
+}
 
+/* Прорисовка нижней рамки внизу картинок проектов */
+.cont-border {
+  width: 370px;
+  height: 110px;
+  /* Установим стили правой рамки */
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #eeeeee;
+
+  /* Установим стили нинжней рамки */
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #eeeeee;
+
+  /* Установим стили левой рамки */
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #eeeeee;
+}
+/* Название проекта */
 .project-name {
   font-style: normal;
   font-weight: bold;
@@ -535,11 +564,12 @@ margin-right: 0;
   padding-left: 24px;
   padding-top: 20px;
 }
+/* Тип проекта */
 .project-type {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 1.875;
+  line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   margin: 0;
