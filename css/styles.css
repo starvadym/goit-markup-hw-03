@@ -23,11 +23,11 @@ body {
   color: var(--primary-text-color);
 }
 .page-header {
-  /* display: flex; */
   width: 1600px;
   height: 80px;
-  left: 0px;
-  top: 0px;
+  margin: 0 auto;
+  /* left: 0px;
+  top: 0px; */
   border: 1px solid #ececec;
 }
 /* Вспомогательная обводка границ блока */
@@ -190,11 +190,10 @@ margin-right: 0;
 /* Слоган студии */
 .slogan {
   width: 1600px;
-  margin-right: auto;
-  margin-left: auto;
-  margin: 0;
-  margin-top: 8px;
   height: 600px;
+  margin: 0 auto;
+  margin-top: 8px;
+
   text-align: center;
   background: #2f303a;
 }
@@ -247,10 +246,15 @@ margin-right: 0;
   cursor: pointer;
 }
 /* Преимущества студии */
+
+.advantages {
+  width: 1600px;
+  margin: 0 auto;
+}
+
 .advantages ul {
   list-style-type: none;
   display: flex;
-  margin: 0;
   padding: 0;
   margin-top: 86px;
 }
@@ -282,10 +286,9 @@ margin-right: 0;
 }
 /* Чем мы занимаемся */
 
-.advantages,
-.activity,
-.studio-team {
+.activity {
   width: 1600px;
+  margin: 0 auto;
 }
 
 .activity ul {
@@ -315,6 +318,8 @@ margin-right: 0;
   margin-left: 30px;
 }
 .studio-team {
+  width: 1600px;
+  margin: 0 auto;
   background-color: var(--filter-static-color);
 }
 
@@ -378,6 +383,8 @@ margin-right: 0;
 .footer-style {
   width: 1600px;
   height: 252px;
+  margin: 0 auto;
+
   background: #2f303a;
 }
 /* Стиль текста адреса */
@@ -396,7 +403,7 @@ margin-right: 0;
 .filter-bttns {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   margin-left: 295px;
 }
@@ -506,7 +513,6 @@ margin-right: 0;
 /* Проекты студии */
 .projects {
   list-style-type: none;
-  margin: 0;
   margin-bottom: 94px;
   padding: 0;
   padding-top: 50px;
@@ -515,6 +521,7 @@ margin-right: 0;
 }
 .projects-list {
   width: 1600px;
+  margin: 0 auto;
   margin-top: 94px;
 }
 .projects .item {
