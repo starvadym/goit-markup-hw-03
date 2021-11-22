@@ -26,8 +26,6 @@ body {
   width: 1600px;
   height: 80px;
   margin: 0 auto;
-  /* left: 0px;
-  top: 0px; */
   border: 1px solid #ececec;
 }
 /* Вспомогательная обводка границ блока */
@@ -83,14 +81,10 @@ body {
 }
 .header-contacts {
   display: flex;
-  /* justify-content: flex-end; */
 }
 .page-header * {
   display: flex;
 }
-/* .container nav, .container .header-contacts {
-  display: flex;
-} */
 
 /* .site-nav .item{
   margin-right: 50px;
@@ -187,7 +181,13 @@ margin-right: 0;
   margin-left: auto;
   /* outline: 2px solid tomato; */
 }
-/* Слоган студии */
+/* Отступы для внутреннего контента секций страницы */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+/* Секция - Слоган студии */
 .slogan {
   width: 1600px;
   height: 600px;
@@ -197,9 +197,10 @@ margin-right: 0;
   text-align: center;
   background: #2f303a;
 }
+
+/* Стиль слогана */
+
 .slogan-statement {
-  /* width: 696px;
-  height: 120px; */
   margin: 0px;
   padding-top: 200px;
   font-style: normal;
@@ -211,6 +212,8 @@ margin-right: 0;
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
+/* Стиль текста - Заказать услугу */
+
 .slogan button {
   font-style: normal;
   font-weight: bold;
@@ -225,7 +228,7 @@ margin-right: 0;
   color: var(--primary-white-color);
 }
 
-/* Кнопка заказать работу */
+/* Стиль кнопки - заказать работу */
 .btn-type {
   display: inline-block;
   width: 200px;
@@ -245,18 +248,21 @@ margin-right: 0;
   border-radius: 4px;
   cursor: pointer;
 }
-/* Преимущества студии */
+/* Секция - Преимущества студии */
 
 .advantages {
   width: 1600px;
   margin: 0 auto;
+  padding-top: 0;
 }
+/* Горизонтальное размещение Flex */
 
 .advantages ul {
   list-style-type: none;
   display: flex;
+  margin: 0;
   padding: 0;
-  margin-top: 86px;
+  padding-top: 86px;
 }
 .advantages .item + .item {
   margin-left: 30px;
@@ -284,13 +290,14 @@ margin-right: 0;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-/* Чем мы занимаемся */
+/* Секция - Чем мы занимаемся */
 
 .activity {
   width: 1600px;
   margin: 0 auto;
+  padding-top: 0;
 }
-
+/* Горизонтальное размещение Flex */
 .activity ul {
   list-style-type: none;
   display: flex;
@@ -298,6 +305,7 @@ margin-right: 0;
   padding: 0;
   margin-top: 50px;
 }
+/* Очистка отступа элемента */
 
 .activity .item + .item {
   margin-left: 30px;
@@ -311,9 +319,9 @@ margin-right: 0;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  margin-top: 94px;
 }
-/* Наша команда */
+/* Секция - Наша команда */
+/* Очистка отступа элемента */
 .studio-team .item + .item {
   margin-left: 30px;
 }
@@ -331,9 +339,8 @@ margin-right: 0;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-bottom: 94px;
 }
-
+/* Горизонтальное размещение Flex */
 .team-photos {
   list-style-type: none;
   margin: 0;
@@ -350,12 +357,9 @@ margin-right: 0;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  margin-top: 94px;
-  padding-top: 94px;
 }
+/* Стиль текста - имя */
 .team-member {
-  /* width: 160px;
-  height: 19px; */
   margin: 0;
   margin-top: 30px;
   font-style: normal;
@@ -366,9 +370,8 @@ margin-right: 0;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+/* Стиль текста - название должности*/
 .team-position {
-  /* width: 147px;
-  height: 19px; */
   margin: 0;
   margin-top: 10px;
   font-style: normal;
@@ -407,9 +410,12 @@ margin-right: 0;
   display: flex;
   margin-left: 295px;
 }
+/* Очистка крайнего отсупа элемента */
+
 .filter-bttns .item + .item {
   margin-left: 8px;
 }
+/* Стиль текта названия кнопок */
 .filter-bttns button {
   font-style: normal;
   font-weight: 500;
@@ -430,6 +436,9 @@ margin-right: 0;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
 }
+
+/* Стили кнопок фильтров */
+
 .bttn-all {
   width: 73px;
   height: 38px;
@@ -510,19 +519,19 @@ margin-right: 0;
   border-width: 0;
   cursor: pointer;
 }
-/* Проекты студии */
+/* Секция - Проекты студии */
+
 .projects {
   list-style-type: none;
-  margin-bottom: 94px;
   padding: 0;
   padding-top: 50px;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
 }
 .projects-list {
   width: 1600px;
   margin: 0 auto;
-  margin-top: 94px;
 }
 .projects .item {
   width: 370px;
@@ -563,7 +572,7 @@ margin-right: 0;
   border-left-style: solid;
   border-left-color: #eeeeee;
 }
-/* Название проекта */
+/* Стиль текста - Название проекта */
 .project-name {
   font-style: normal;
   font-weight: bold;
@@ -576,7 +585,7 @@ margin-right: 0;
   padding-left: 24px;
   padding-top: 20px;
 }
-/* Тип проекта */
+/* Стиль текста - Тип проекта */
 .project-type {
   font-style: normal;
   font-weight: normal;
