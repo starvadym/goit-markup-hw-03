@@ -19,14 +19,16 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: var(--primary-white-color);
+  /* background-color: var(--primary-white-color); */
+  background: #e5e5e5;
   color: var(--primary-text-color);
 }
 .page-header {
   width: 1600px;
-  height: 80px;
+  height: 88px;
   margin: 0 auto;
   border: 1px solid #ececec;
+  background-color: var(--primary-white-color);
 }
 /* Вспомогательная обводка границ блока */
 /* margin-bottom: 50px;
@@ -186,13 +188,13 @@ margin-right: 0;
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: var(--primary-white-color);
 }
 /* Секция - Слоган студии */
 .slogan {
   width: 1600px;
   height: 600px;
   margin: 0 auto;
-  margin-top: 8px;
 
   text-align: center;
   background: #2f303a;
