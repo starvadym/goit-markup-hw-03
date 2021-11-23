@@ -27,7 +27,9 @@ body {
   width: 1600px;
   height: 88px;
   margin: 0 auto;
-  border: 1px solid #ececec;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #ececec;
   background-color: var(--primary-white-color);
 }
 /* Вспомогательная обводка границ блока */
