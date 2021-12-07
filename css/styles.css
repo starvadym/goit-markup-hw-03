@@ -6,42 +6,26 @@
   --filter-static-color: #f5f4fa;
   --accent-color: #188ce8;
   --primary-white-color: #ffffff;
+  --background-color: #e5e5e5;
 }
-/*Используется когда нет нормализации стилей*/
-/* html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-} */
 
 body {
   font-family: "Roboto", sans-serif;
-  /* background-color: var(--primary-white-color); */
-  background: #e5e5e5;
+  background: var(--background-color);
   color: var(--primary-text-color);
 }
 .page-header {
-  width: 1600px;
-  height: 88px;
-  margin: 0 auto;
-  padding-bottom: 8px;
   background-color: var(--primary-white-color);
 }
+.studio {
+  padding-bottom: 8px;
+  color: var(--primary-white-color);
+}
 .border-line {
-  width: 1600px;
-  height: 80px;
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: #ececec;
 }
-/* Вспомогательная обводка границ блока */
-/* margin-bottom: 50px;
-  outline: 2px solid tomato;
-  background-color: tomato;
-} */
 
 .logo {
   font-family: "Raleway";
@@ -52,18 +36,16 @@ body {
   letter-spacing: 0.03em;
   color: #000000;
   text-decoration: none;
-  padding-top: 24px;
+  align-items: center;
 }
 .footer-style .logo {
   display: inline-block;
-  padding-top: 60px;
 }
+
 .logoweb {
-  color: #2196f3;
+  color: var(--static-color);
 }
-.studio {
-  color: #ffffff;
-}
+
 /* Меню навигации */
 /* Базовый стиль ссылок */
 /* Расширение границ */
@@ -71,6 +53,7 @@ body {
   display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
+
   /* Оформление текста */
   font-style: normal;
   font-weight: 500;
@@ -132,17 +115,15 @@ margin-right: 0;
   padding: 0;
 }
 
-.footer-contacts {
-  padding-bottom: 60px;
-}
-
 /* Стили ссылок контактов */
 /* Расширение границ */
 .header-contacts .nav-link {
   display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
+
   /* Оформление текста */
+
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -152,6 +133,7 @@ margin-right: 0;
   text-decoration: none;
 }
 /* Удаление зазора у крайнего элемента */
+
 .header-contacts .item:not(:last-child) {
   margin-right: 50px;
 }
@@ -166,14 +148,14 @@ margin-right: 0;
 }
 .footer-contacts a {
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 1.143;
+  line-height: 1.71;
   letter-spacing: 0.02em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   display: inline-block;
-  padding-top: 9px;
+  margin-top: 9px;
 }
 .footer-contacts a:hover,
 .footer-contacts a:focus {
@@ -181,6 +163,7 @@ margin-right: 0;
 }
 /* Весь внутренний контент оборачиваем в специальный контейнер */
 /* Указываем заданную ширину области контента, а также центрируем */
+
 .container {
   width: 1200px;
   margin: 0;
@@ -188,7 +171,6 @@ margin-right: 0;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-  /* outline: 2px solid tomato; */
 }
 /* Отступы для внутреннего контента секций страницы */
 
@@ -198,10 +180,9 @@ margin-right: 0;
   background-color: var(--primary-white-color);
 }
 /* Секция - Слоган студии */
-.slogan {
-  width: 1600px;
-  height: 600px;
-  margin: 0 auto;
+.section.slogan {
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
   background: #2f303a;
 }
@@ -210,7 +191,6 @@ margin-right: 0;
 
 .slogan-statement {
   margin: 0px;
-  padding-top: 200px;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -237,6 +217,7 @@ margin-right: 0;
 }
 
 /* Стиль кнопки - заказать работу */
+
 .btn-type {
   display: inline-block;
   width: 200px;
@@ -245,7 +226,6 @@ margin-right: 0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   margin-top: 30px;
-  margin-bottom: 200px;
 }
 .btn-type:hover,
 .btn-type:focus {
@@ -256,13 +236,7 @@ margin-right: 0;
   border-radius: 4px;
   cursor: pointer;
 }
-/* Секция - Преимущества студии */
 
-.advantages {
-  width: 1600px;
-  margin: 0 auto;
-  padding-top: 0;
-}
 /* Горизонтальное размещение Flex */
 
 .advantages ul {
@@ -270,13 +244,14 @@ margin-right: 0;
   display: flex;
   margin: 0;
   padding: 0;
-  padding-top: 94px;
 }
+
 .advantages .item + .item {
   margin-left: 30px;
 }
-/* Преимущества */
+/* Секция Advantages */
 /* Стили текста заголовков и абзацев */
+
 .advantages .item {
   width: 270px;
 }
@@ -298,10 +273,10 @@ margin-right: 0;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-/* Секция - Чем мы занимаемся */
+/* Секция - Activity */
 
 .activity {
-  width: 1600px;
+  /* width: 1600px; */
   margin: 0 auto;
   padding-top: 0;
 }
@@ -330,11 +305,11 @@ margin-right: 0;
 }
 /* Секция - Наша команда */
 /* Очистка отступа элемента */
+
 .studio-team .item + .item {
   margin-left: 30px;
 }
 .studio-team {
-  width: 1600px;
   margin: 0 auto;
   background-color: var(--filter-static-color);
 }
@@ -366,10 +341,14 @@ margin-right: 0;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+
+.team-cont {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 /* Стиль текста - имя */
 .team-member {
   margin: 0;
-  margin-top: 30px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -392,9 +371,9 @@ margin-right: 0;
 }
 /* Стиль футера */
 .footer-style {
-  width: 1600px;
-  height: 252px;
   margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   background: #2f303a;
 }
@@ -403,9 +382,9 @@ margin-right: 0;
   margin: 0;
   margin-top: 20px;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
 }
@@ -414,9 +393,9 @@ margin-right: 0;
 .filter-bttns {
   list-style-type: none;
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
   display: flex;
-  margin-left: 295px;
+  justify-content: center;
 }
 /* Очистка крайнего отсупа элемента */
 
@@ -532,13 +511,13 @@ margin-right: 0;
 .projects {
   list-style-type: none;
   padding: 0;
-  padding-top: 50px;
   margin: 0;
+  margin-top: 50px;
+
   display: flex;
   flex-wrap: wrap;
 }
 .projects-list {
-  width: 1600px;
   margin: 0 auto;
 }
 .projects .item {
@@ -565,6 +544,8 @@ margin-right: 0;
 .cont-border {
   width: 370px;
   height: 110px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   /* Установим стили правой рамки */
   border-right-width: 1px;
   border-right-style: solid;
@@ -591,7 +572,6 @@ margin-right: 0;
   margin: 0;
   padding: 0;
   padding-left: 24px;
-  padding-top: 20px;
 }
 /* Стиль текста - Тип проекта */
 .project-type {
@@ -604,6 +584,5 @@ margin-right: 0;
   margin: 0;
   padding: 0;
   padding-left: 24px;
-  padding-top: 4px;
-  padding-bottom: 20px;
+  margin-top: 4px;
 }
