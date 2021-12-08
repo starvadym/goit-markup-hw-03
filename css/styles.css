@@ -191,7 +191,6 @@ margin-right: 0;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.363;
-  /* text-align: center; */
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
@@ -272,8 +271,6 @@ margin-right: 0;
 /* Секция - Activity */
 
 .activity {
-  /* width: 1600px; */
-  margin: 0 auto;
   padding-top: 0;
 }
 /* Горизонтальное размещение Flex */
@@ -306,7 +303,6 @@ margin-right: 0;
   margin-left: 30px;
 }
 .studio-team {
-  margin: 0 auto;
   background-color: var(--filter-static-color);
 }
 
@@ -369,7 +365,6 @@ margin-right: 0;
 }
 /* Стиль футера */
 .footer-style {
-  margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
 
